@@ -1,9 +1,9 @@
 # NCKH---Face-Recognition---Auto-login-
-**1. Bước đầu tiên chúng ta cần phải tải thư viện để đáp ứng được nhu cầu của chương trình**
+**2. Bước đầu tiên chúng ta cần phải tải thư viện để đáp ứng được nhu cầu của chương trình**
 	
 	pip install -r requirements.txt
 
-**2. Sau khi tải xong thư viện thì chúng ta bắt đầu tiền hành thu thập dữ liệu** <br>
+**3. Sau khi tải xong thư viện thì chúng ta bắt đầu tiền hành thu thập dữ liệu** <br>
 Có 2 cách để thu thập dữ liệu trong chương trình này <br>
 
 _**Cách 1:**_ Thu thập bằng camera: <br> <br>
@@ -34,7 +34,7 @@ _**Cách 1:**_ Thu thập bằng WEB local khi đã chuẩn bị sẵn hình ả
 	
 <i>Sau khi upload ảnh xong thì tương tự thu được data trong file images/</i>
 
-**3. Sau khi có dữ liệu thì tiến hành train model bằng cách train lại pretrained-model**
+**4. Sau khi có dữ liệu thì tiến hành train model bằng cách train lại pretrained-model**
 
 	python faces_train.py
 	
@@ -43,7 +43,7 @@ _**Cách 1:**_ Thu thập bằng WEB local khi đã chuẩn bị sẵn hình ả
 <img src="https://github.com/ngluonghungg2611/NCKH---Face-Recognition---Auto-login-/blob/master/file_trainner.jpg">
 
 
-**4. Test model đã được train**
+**5. Test model đã được train**
 
 <i>Model sẽ train và thu thập các face labels vào file face-labels.pickle</i>
 
