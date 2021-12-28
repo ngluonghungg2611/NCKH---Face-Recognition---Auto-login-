@@ -1,4 +1,5 @@
 # NCKH---Face-Recognition---Auto-login-
+**1. Bước đầu tiền là chúng ta hãy install git và config với ssh nhé =)) !**
 **2. Bước đầu tiên chúng ta cần phải tải thư viện để đáp ứng được nhu cầu của chương trình**
 	
 	pip install -r requirements.txt
