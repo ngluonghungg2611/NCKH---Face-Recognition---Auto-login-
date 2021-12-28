@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function chooseFile1(fileInput)
+        {
+            if (fileInput.files && fileInput.files[0])
+            {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("#img1").attr('src', e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+            
+        }
+        function chooseFile2(fileInput)
+        {
+            if (fileInput.files && fileInput.files[0])
+            {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("#img2").attr('src', e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+            
+        }
+        function chooseFile3(fileInput)
+        {
+            if (fileInput.files && fileInput.files[0])
+            {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("#img3").attr('src', e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+            
+        }
+        function chooseFile4(fileInput)
+        {
+            if (fileInput.files && fileInput.files[0])
+            {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("#img4").attr('src', e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+            
+        }
+        function chooseFile5(fileInput)
+        {
+            if (fileInput.files && fileInput.files[0])
+            {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("#img5").attr('src', e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+            
+        }
+    </script> -->
+    
+</head>
+<body>
+    <form method="post" action="/save_image" enctype="multipart/form-data">
+        
+        <h1>Upload your image</h1>
+
+        <img src="" alt="" id="img1">
+        <input type="file" name="image1" id="imageFile" 
+        accept="image/jpg, image/jpeg, image/gif, image/png"
+        onchange="chooseFile1(this)">
+
+        <img src="" alt="" id="img2">
+        <input type="file" name="image2" id="imageFile" 
+        accept="image/jpg, image/jpeg, image/gif, image/png"
+        onchange="chooseFile2(this)">
+
+        <img src="" alt="" id="img3">
+        <input type="file" name="image3" id="imageFile" 
+        accept="image/jpg, image/jpeg, image/gif, image/png"
+        onchange="chooseFile3(this)">
+
+        <img src="" alt="" id="img4">
+        <input type="file" name="image4" id="imageFile" 
+        accept="image/jpg, image/jpeg, image/gif, image/png"
+        onchange="chooseFile4(this)">
+
+        <img src="" alt="" id="img5">
+        <input type="file" name="image5" id="imageFile" 
+        accept="image/jpg, image/jpeg, image/gif, image/png"
+        onchange="chooseFile5(this)">
+        <br>
+        <br>
+        Import your name:
+        <input type="text" name="nameFile" id="imageName">
+        <br>
+        <input type="submit" name="submit" id="submit" value="Upload" >
+    </form>
+</body>
+</html>
