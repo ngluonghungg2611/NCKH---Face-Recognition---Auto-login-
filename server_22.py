@@ -26,10 +26,7 @@ def _predict():
         
         cv2.imwrite(image_path, face_rz)        
         
-        # image = Image.open(io.BytesIO(image)).convert("L")
-        
-        
-        # image_face = utils_2._crop_face_224(image)
+
         
         
         recognizer = cv2.face.LBPHFaceRecognizer_create()
