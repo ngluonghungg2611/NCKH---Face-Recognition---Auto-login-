@@ -33,7 +33,7 @@ while(True):
 
         # recognize? deep learned model predict keras tensorflow pytorch scikit learn
         id_, conf = recognizer.predict(roi_gray)
-        if conf >= 50 and conf <= 85:
+        if conf >= 50 and conf <= 95:
             # print(5: #id_)
             # print(labels[id_])
             font = cv2.FONT_HERSHEY_SIMPLEX
@@ -46,7 +46,7 @@ while(True):
             cv2.putText(frame, "Accessed your face!", (50, 50), font, 1, (0,255,0), stroke, cv2.LINE_AA)
             cv2.putText(frame, str(round(conf,2)) + " %", (x+w, y+h), font, 0.7, (255,255,0), stroke, cv2.LINE_AA)
 
-        img_item = "7.png"
+        img_item = "last_image_predicted.png"
         cv2.imwrite(img_item, roi_color)
 
         color = (255, 0, 0)  # BGR 0-255
