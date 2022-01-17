@@ -33,7 +33,7 @@ else:
         frame_faces = frame.copy()          
         roi = frame[ROI_top:ROI_bottom, ROI_left:ROI_right]
         gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
-        # gray_roi = cv2.GaussianBlur(gray_roi, (9,9), 0)
+        #
         faces_opposite = face_cascade_opposite.detectMultiScale(frame, 1.3, 5)
         faces_alt = face_cascade_alt.detectMultiScale(frame, 1.3, 5)
         # Chuan bi background
