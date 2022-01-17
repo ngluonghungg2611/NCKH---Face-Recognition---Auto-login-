@@ -22,7 +22,7 @@ def _save_image():
             image = request.files['image' + str(i)]
             image_path = os.path.join(app.root_path, 'images/' + str(name) + "/" + str(i) + ".jpg")
             image.save(image_path)
-        # faces_train.train()
+        
         data["Upload files"] = True
     return json.dumps(data, ensure_ascii=False, cls=utils.NumpyEncoder)
 
